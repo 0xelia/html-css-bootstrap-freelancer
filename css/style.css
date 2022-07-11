@@ -1,0 +1,26 @@
+.hero .decoration::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 30%;
+    min-width: 50px;
+    background-color: white;
+    border-radius: 999px;
+}
+
+.hero .decoration::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 30%;
+    min-width: 50px;
+    background-color: white;
+    border-radius: 999px;
+}
+
+.hero .col .skills li.after::after{
+    content: '-';
+    display: inline;
+    padding-left: 0.75rem;
+}
+
