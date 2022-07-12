@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -16,25 +15,34 @@
 <body>
 <header class="main-header bg-dark text-light">
     <div class="container py-2">
-        <div class="row justify-content-between align-items-center">
-            <div class="col d">
-                <div class="logo text-uppercase fs-4 fw-bold">
-                    start bootstrap
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold" href="#">Bootstrap Start</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav mt-2 mt-lg-0 text-uppercase">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
-            <nav class="col-3 nav text-uppercase text-light fs-6 flex-nowrap d-none d-lg-flex">
-                <li class="nav-link disabled text-light">home</li>
-                <li class="nav-link disabled text-light">about</li>
-                <li class="nav-link disabled text-light">contact</li>
-            </nav>
-            <nav class="col d-lg-none d-flex justify-content-end">
-                <i class="fa-solid fa-bars fs-4 border border-2 rounded-3 p-2"></i>
-            </nav>
-        </div>
+        </nav>
+        
     </div>
 </header>
 
-<section class="hero bg-success">
+<section class="hero bg-main">
     <div class="container pt-lg-5 p-3">
         <div class="row text-center flex-column align-items-center">
             <div class="col-lg-3 col-md-4 col-6">
@@ -49,7 +57,7 @@
                 </div>
             </div>
             <div class="col">
-                <ul class="d-flex justify-content-center text-uppercase display-6 list-unstyled text-light fs-5 flex-nowrap skills pt-3">
+                <ul class="d-flex justify-content-center text-uppercase list-unstyled text-light fs-6 flex-nowrap skills pt-3">
                     <li class="px-lg-3 px-2">Grafic Artist </li>
                     <li class="px-lg-3 px-2">Web Designer </li>
                     <li  class="px-lg-3 px-2">Illustrator</li>
@@ -61,7 +69,7 @@
 
 <section class="portfolio pb-5">
     <div class="container">
-        <div class="row flex-column">
+        <div class="row flex-column align-items-center">
             <div class="col">
                 <h2 class="display-5 text-center text-uppercase fw-semibold pt-5 pb-3">
                     Portfolio
@@ -70,30 +78,30 @@
                     <i class="fa-star fa-solid fs-1 mx-2"></i>
                 </div>
             </div>
-            <div class="col row g-4">
-                <div class="col-lg-4 col-12">
+            <div class="col-12 row g-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <img src="./img/cake.png" class="img-fluid rounded-4" alt="">
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <img src="./img/cabin.png" class="img-fluid rounded-4" alt="">
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <img src="./img/circus.png" class="img-fluid rounded-4" alt="">
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <img src="./img/game.png" class="img-fluid rounded-4" alt="">
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <img src="./img/safe.png" class="img-fluid rounded-4" alt="">
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <img src="./img/submarine.png" class="img-fluid rounded-4" alt="">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="about bg-success text-light">
+<section class="about bg-main text-light">
     <div class="container px-5">
         <div class="row">
             <div class="col-12">
@@ -110,8 +118,78 @@
             <div class="col-12 col-lg-6 pt-3">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit placeat quidem in vel autem et repellat, est enim tempora tenetur, ex labore illo recusandae illum!</p>
             </div>
+            <div class="col-12 text-center pt-3 pb-5">
+                <button class="btn btn-outline-light">
+                    <i class="fa-solid fa-download"></i>
+                    Download
+                </button>
+            </div>
         </div>
     </div>
 </section>
+<section class="contact-me pb-3">
+    <div class="container px-5">
+        <h2 class="display-5 text-center text-uppercase fw-semibold pt-5 pb-3">
+            Contact me
+        </h2>
+        <div class="decoration d-flex flex-nowrap align-items-center justify-content-center">
+            <i class="fa-star fa-solid fs-1 mx-2"></i>
+        </div>
+    
+        <div class="contact-list">
+            <ul class="list-unstyled d-flex flex-column ">
+                <li class="border-bottom border-2 py-1">Name</li>
+                <li class="border-bottom border-2 py-1">Phone Number</li>
+                <li class="border-bottom border-2 py-1">Email Address</li>
+                <li class="border-bottom border-2 py-1 flex-grow-1">Messagge</li>
+            </ul>
+        </div>
+        <div class="btn btn-main-style">Send</div>
+    </div>    
+</section>
+<footer class="main-footer">
+        <section class="footer-first bg-dark text-light">
+            <div class="container py-3">
+                <div class="row row-cols-lg-3 row-cols-1 justify-content-center gy-4">
+                    <div class="col address text-center">
+                        <h5 class="fs-5 text-uppercase">
+                            Location
+                        </h5>
+                        <address class="small">
+                            2215 John Daniel Drive Clark, MO <br>54243
+                        </address>
+                    </div>
+                    <div class="col socials text-center">
+                        <h5 class="fs-5 text-uppercase">
+                            Around the web
+                        </h5>
+                        <div class="social-icons text-light d-flex justify-content-center py-2 ">
+                            <i class=" px-1 fa-brands fa-facebook-f"></i>
+                            <i class=" px-1 fa-brands fa-google-plus-g"></i>
+                            <i class=" px-1 fa-brands fa-twitter"></i>
+                            <i class=" px-1 fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div class="col opensource text-center">
+                        <h5 class="fs-5 text-uppercase">
+                            About freelancer
+                        </h5>
+                        <p class="small">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum labore at quod voluptate ad! Excepturi!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    <section class="footer-second text-light bg-black">
+        <div class="container-fluid py-4">
+            <p class="copyright text-center small">
+                Copyright &copy; Your website 2019 
+            </p>    
+        </div>
+    </section>  
+    
+</footer>
 </body>
 </html>

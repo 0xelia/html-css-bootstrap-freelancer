@@ -1,3 +1,29 @@
+:root {
+    --bg-main: #1ABC9C;
+    --white: #fff;
+}
+
+.bg-main {
+    background-color: var(--bg-main);
+    color: var(--white);
+}
+
+.btn-main-style {
+    background-color: var(--bg-main);
+    color: var(--white); 
+}
+
+.contact-me .btn-main-style {
+    background-color: var(--bg-main);
+    color: var(--white);
+}
+
+.hero .skills {
+    margin: 0 auto;
+    max-width: 75vw;
+}
+
+
 .decoration::before {
     content: '';
     display: block;
@@ -22,5 +48,28 @@
     content: '-';
     display: inline;
     padding-left: 0.75rem;
+}
+
+.footer-first .opensource p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+    .contact-me .contact-list ul{
+        height: 400px;
+    }
+}
+
+@media (min-width: 760px) {
+    .contact-me .contact-list ul{
+        height: 300px;
+    }
+}
+
+@media (min-width: 250px) {
+    .contact-me .contact-list ul{
+        height: 200px;
+    }
 }
 
